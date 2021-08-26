@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: gray;
+}
+h2{
+ color: rgb(165, 12, 45);  
+ text-align: center;
+}
+.calculator{
+margin: 20px auto;
+padding: 10px;
+width: 350px;
+height: 400px;
+background-color: rgb(60, 61, 60);
+box-shadow: 1px 1px 5px;
+
+}
+.input-field{
+width: 338px;
+height: 45px;
+margin: 5px;
+border: 0px solid wheat;
+border-radius: 3px;
+font-size: 25px;
+font-weight: bold;
+text-align: end;
+padding-right: 5px;
+}
+
+.button{
+    width: 350px;
+    margin-top: 10px;
+   
+}
+.single-btn{
+  width: 76px;
+  height: 55px;  
+  margin:5px 4px;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0px solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px;
+}
+.operator{
+   color: rgb(253, 48, 11);
+   font-weight: bold;
+   font-size: 25px;
+   
+}
+#qual-operator{
+background-color:rgb(243, 78, 49) ;
+color: whitesmoke;
+
+}

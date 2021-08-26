@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Simple calculator with javasript</h2>
+    </header>
+    <main>
+        <section  class="calculator">
+            <div>
+                <input id="display"  class="input-field" type="text" placeholder="0" >
+            </div>
+            <div class="button">
+            <div class="btn-line">
+                <input  class="single-btn operator" type="button" value="C" onclick="display.value=null">
+                <input  class="single-btn operator" type="button" value="x" onclick="calculate(this.value)" disabled>
+                <input  class="single-btn operator" type="button" value="%" onclick="calculate(this.value)" >
+                <input  class="single-btn operator" type="button" value="/" onclick="calculate(this.value)">
+            </div>
+            <div class="btn-line">
+                <input  class="single-btn" type="button" value="7" onclick="calculate(this.value)">
+                <input  class="single-btn" type="button" value="8" onclick="calculate(this.value)">
+                <input  class="single-btn" type="button" value="9" onclick="calculate(this.value)">
+                <input  class="single-btn operator" type="button" value="*" onclick="calculate(this.value)">
+            </div>
+            <div class="btn-line">
+                <input  class="single-btn" type="button" value="4" onclick="calculate(this.value)">
+                <input  class="single-btn" type="button" value="5" onclick="calculate(this.value)">
+                <input  class="single-btn" type="button" value="6" onclick="calculate(this.value)">
+                <input  class="single-btn operator" type="button" value="-" onclick="calculate(this.value)">
+            </div>
+            <div class="btn-line">
+                <input  class="single-btn" type="button" value="1" onclick="calculate(this.value)">
+                <input  class="single-btn" type="button" value="2" onclick="calculate(this.value)">
+                <input  class="single-btn" type="button" value="3" onclick="calculate(this.value)">
+                <input  class="single-btn operator" type="button" value="+" onclick="calculate(this.value)" >
+            </div>
+            <div class="btn-line">
+                <input  class="single-btn" type="button" value="0"  onclick="calculate(this.value)">
+                <input  class="single-btn" type="button" value="00" onclick="calculate(this.value)">
+                <input  class="single-btn" type="button" value="."  onclick="calculate(this.value)">
+                <input id="qual-operator" class="single-btn operator" type="button" value="=" onclick=" display.value=eval(display.value)">
+            </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="calculator.js"></script>
+</body>
+</html>
